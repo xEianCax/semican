@@ -110,7 +110,7 @@ client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
-client.login(process.env.token);
+client.login(ayarlar.token);
 
 
 client.on("guildMemberAdd", member => {
